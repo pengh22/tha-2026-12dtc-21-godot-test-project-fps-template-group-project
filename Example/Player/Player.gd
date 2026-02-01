@@ -22,7 +22,7 @@ var time_elapsed = 0.0
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 func _ready():
-	global_position = start_Marker3D.global_position
+#	global_position = start_Marker3D.global_position
 	$PlayerHUD/LabelDeaths.text = " Deaths: " + str(player_deaths)
 	$PlayerHUD/LabelAmmo.text = " Ammo: " + str(player_ammo)
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
