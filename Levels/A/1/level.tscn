@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://uy5k4l1euyng"]
 
-[ext_resource type="Script" path="res://Example/LevelTemplate/level.gd" id="1_6j2og"]
-[ext_resource type="PackedScene" uid="uid://rxb4kpt81cow" path="res://Example/Player/player.tscn" id="1_shf8t"]
+[ext_resource type="Script" uid="uid://cw8rihvg82x0k" path="res://Example/LevelTemplate/level.gd" id="1_6j2og"]
+[ext_resource type="PackedScene" uid="uid://rxb4kpt81cow" path="res://Example/player.tscn" id="1_shf8t"]
 [ext_resource type="PackedScene" uid="uid://cpbsrhi3r4fsx" path="res://level_exit.tscn" id="3_mdvo5"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_daoxt"]

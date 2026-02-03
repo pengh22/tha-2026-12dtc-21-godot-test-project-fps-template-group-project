@@ -1,16 +1,16 @@
 extends CharacterBody3D
 
-@export var default_speed = 5.0
+@export var default_speed = 10
 @export var speed = default_speed
 @export var running_speed_multiplier = 2.0
-@export var jump_velocity = 4.5
+@export var jump_velocity = 10
 @export var mouse_sensitivity = 0.002
 var running = false
 
 var player_deaths = 0
 @export var start_Marker3D: Marker3D
 var time_elapsed = 0.0
-@export var game_end_time = 5
+@export var game_end_time = 60
 @export var player_ammo = 3
 @export var max_ammo = 3
 

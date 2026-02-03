@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://t4eb72lghhcs"]
 
-[ext_resource type="PackedScene" uid="uid://rxb4kpt81cow" path="res://Example/Player/player.tscn" id="1_6rwdk"]
-[ext_resource type="Script" path="res://Example/LevelSelectRoom/LevelSelectRoom.gd" id="1_pa0ev"]
+[ext_resource type="PackedScene" uid="uid://rxb4kpt81cow" path="res://Example/player.tscn" id="1_6rwdk"]
+[ext_resource type="Script" uid="uid://d3ajkq4l4f3bg" path="res://Example/LevelSelectRoom/LevelSelectRoom.gd" id="1_pa0ev"]
 [ext_resource type="PackedScene" uid="uid://sgqd6i0yo8s7" path="res://Example/LevelSelectRoom/level_entry_point.tscn" id="3_1oxlh"]
 [ext_resource type="PackedScene" uid="uid://bo5e7pvmbxvck" path="res://PickupMelee.tscn" id="4_oact6"]
 [ext_resource type="PackedScene" uid="uid://bhxip00osepyl" path="res://gun_target.tscn" id="5_5p73w"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bgwev25opgt5b"]
 
 [ext_resource type="MeshLibrary" uid="uid://dg20fuqc77smi" path="res://Example/GridMapExample/MeshLibrarySpace.tres" id="1_kdpwg"]
-[ext_resource type="PackedScene" uid="uid://rxb4kpt81cow" path="res://Example/Player/player.tscn" id="2_i2a3n"]
+[ext_resource type="PackedScene" uid="uid://rxb4kpt81cow" path="res://Example/player.tscn" id="2_i2a3n"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_gaxy7"]
 size = Vector2(50, 50)

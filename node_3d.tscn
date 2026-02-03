@@ -1,23 +1,34 @@
 [gd_scene load_steps=2 format=3 uid="uid://vfua8ni7vmht"]
 
-[ext_resource type="PackedScene" uid="uid://rxb4kpt81cow" path="res://Example/Player/player.tscn" id="1_a202f"]
+[ext_resource type="PackedScene" uid="uid://rxb4kpt81cow" path="res://Example/player.tscn" id="1_a202f"]
 
 [node name="Node3D" type="Node3D"]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -2, -18.5)
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(0.9799783, -0.18739308, -0.06757854, 0.1868925, 0.98228794, -0.013753988, 0.06895933, 0.00084837526, 0.9976268, 8.245153, -2.604444, -47.511833)
 use_collision = true
-size = Vector3(7, 3, 38)
+size = Vector3(16.924377, 7.585449, 13.137695)
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="CSGBox3D3"]
 
-[node name="Player" parent="." instance=ExtResource("1_a202f")]
-transform = Transform3D(1, 0, 0, 0, 0.9947939, 0.10190706, 0, -0.10190706, 0.9947939, 3.9113457, 0.19409502, -2.732696)
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.161054, -7.2836924, -6.65617)
+use_collision = true
+size = Vector3(21.047913, 13.567383, 14.368164)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.91346735, 0.40691203, 0, -0.40691203, 0.91346735, 0, 3.5373592, 0)
+transform = Transform3D(0.1949705, -0.39910296, 0.89593714, 2.5817284e-08, 0.9134672, 0.40691203, -0.98080903, -0.07933581, 0.17809919, 50.2547, 30.777056, -30.535542)
+light_color = Color(0.6223814, 0.9606189, 0.9187474, 1)
 
-[node name="CSGPolygon3D" type="CSGPolygon3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9644787, -0.15868974, -0.55243266)
-polygon = PackedVector2Array(0.1257441, 0.4776193, 0, 1, 0.44708228, 0.590112, 1, 0)
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="DirectionalLight3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.99949837, 0)
+radius = 0.001
+height = 0.001
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(0.028532267, 0, 0.99959284, 0, 1, 0, -0.99959284, 0, 0.028532267, 3.3331819, -6.666423, -28.142029)
+use_collision = true
+size = Vector3(16.774826, 12.145264, 16.642944)
+
+[node name="Player" parent="." instance=ExtResource("1_a202f")]
+transform = Transform3D(0.99774814, -0.034245346, -0.057669844, 0.040256936, 0.9934939, 0.10653269, 0.053646374, -0.108614415, 0.99263537, -2.5405421, 3.1332264, -7.2000675)
